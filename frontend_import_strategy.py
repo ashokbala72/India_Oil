@@ -4,6 +4,11 @@ import streamlit as st
 from dotenv import load_dotenv
 from streamlit_autorefresh import st_autorefresh
 load_dotenv()
+# Map Streamlit Cloud secrets to environment variables (needed by backend)
+if hasattr(st, "secrets"):
+    for k, v in st.secrets.items():
+        os.environ.setdefault(str(k), str(v))
+
 import backend_oil_import_optimizer as be
 
 
