@@ -1,8 +1,9 @@
-fastapi==0.115.0
-uvicorn==0.30.6
-pydantic==2.8.2
-python-dotenv==1.0.1
-openai>=1.30.0
-requests==2.32.3
-streamlit==1.37.1
-reportlab==4.2.2
+streamlit>=1.37
+python-dotenv>=1.0
+streamlit-autorefresh>=1.0.1
+yfinance>=0.2
+feedparser>=6.0
+requests>=2.31
+openai>=1.30
+altair>=5.3
+pandas>=2.0
